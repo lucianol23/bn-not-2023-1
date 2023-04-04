@@ -1,0 +1,15 @@
+//Cria o projeto com Node.js + Express
+npx express-gernerator bac-end --no-view
+
+//vai para a pasta projeto
+cd back-end 
+
+// Instala as depedencias do projeto
+npm install
+
+//Faz upgrade de pacotes para sanar vulnerabilidade
+npm audit fix --force
+
+//Adicionar pacotes necessarios ao mongo db
+npm i mongoose dotenv
+
